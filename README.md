@@ -2,7 +2,7 @@
 <div align="center">
 
 # Regional Cost of Living
-### Data Platform & Policy Simulator
+### 🏙️ Data Platform & Policy Simulator
 
 **An end-to-end data engineering and game-theoretic analysis platform that ingests 50 years of Canadian and U.S. economic indicators, stores them in a normalized PostgreSQL warehouse, and simulates the cost-of-living impact of policy interventions.**
 
