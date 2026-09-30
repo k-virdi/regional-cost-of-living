@@ -18,10 +18,10 @@
 
 ---
 
-## Dashboard Preview
+<! ## Dashboard Preview
 
 ![Dashboard Overview](docs/images/dashboard-overview.png)
-
+ <!>
 ---
 
 ## The Problem
