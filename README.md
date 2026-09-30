@@ -20,15 +20,6 @@
 
 ---
 
-## The Problem
-
-Housing affordability is the defining economic issue of our time. Between 1980 and 2024, median household income in Canada and the U.S. grew by roughly 180%, but average rents grew by over 400%. Policymakers, economists, and citizens all need a tool that answers a simple question:
-
-> **"If we change policy X, how does the cost of living actually change — and who wins, who loses?"**
-
-This project builds that tool from the ground up: official data ingestion → normalized warehouse → interactive visualization → game-theoretic policy simulation.
-
----
 
 ## What It Does
 
