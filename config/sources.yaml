@@ -1,0 +1,65 @@
+# config/sources.yaml
+# Central registry of all data sources and their identifiers
+
+statcan:
+  base_url: "https://www150.statcan.gc.ca/t1/tbl1/en"
+  tables:
+    cpi:
+      pid: "18100004"
+      name: "Consumer Price Index, monthly, not seasonally adjusted"
+      start_year: 1975
+      geography: ["Canada", "Ontario", "Quebec", "British Columbia", "Alberta"]
+    labour_force:
+      pid: "14100287"
+      name: "Labour force characteristics, monthly"
+      start_year: 1976
+      geography: ["Canada", "Ontario", "Quebec", "British Columbia", "Alberta"]
+    income:
+      pid: "11100086"
+      name: "Income of individuals, by sex and age"
+      start_year: 1975
+      geography: ["Canada", "Ontario", "Quebec", "British Columbia", "Alberta"]
+
+bls:
+  base_url: "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+  series:
+    cpi_all_items:
+      series_id: "CUUR0000SA0"
+      name: "CPI-U All Items, NSA"
+      frequency: "monthly"
+      start_year: 1975
+    cpi_food:
+      series_id: "CUUR0000SAF1"
+      name: "CPI-U Food, NSA"
+      frequency: "monthly"
+      start_year: 1975
+    cpi_rent:
+      series_id: "CUUR0000SEHA"
+      name: "CPI-U Rent of Primary Residence, NSA"
+      frequency: "monthly"
+      start_year: 1975
+    avg_hourly_earnings:
+      series_id: "CES0500000003"
+      name: "Average Hourly Earnings, Total Private"
+      frequency: "monthly"
+      start_year: 2006
+
+census:
+  base_url: "https://api.census.gov/data"
+  years: [2005, 2010, 2015, 2019, 2021, 2022, 2023]
+  variables:
+    median_household_income: "B19013_001E"
+    median_gross_rent: "B25064_001E"
+    per_capita_income: "B19301_001E"
+  geography: "state:*"
+
+cmhc:
+  # CMHC data is accessed via Open Government Portal CKAN API
+  ckan_api: "https://open.canada.ca/data/api/3/action"
+  datasets:
+    rental_avg_rent:
+      package_id: "cmhc-average-rents"
+      resource_format: "CSV"
+    rental_vacancy:
+      package_id: "cmhc-vacancy-rates"
+      resource_format: "CSV"
