@@ -1,0 +1,15 @@
+name: regional_cost_of_living
+version: "1.0.0"
+config-version: 2
+
+profile: regional_cost_of_living
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+models:
+  regional_cost_of_living:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
