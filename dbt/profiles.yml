@@ -1,0 +1,12 @@
+regional_cost_of_living:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('POSTGRES_HOST', 'localhost') }}"
+      port: "{{ env_var('POSTGRES_PORT', '5432') | int }}"
+      user: "{{ env_var('POSTGRES_USER', 'rcol') }}"
+      pass: "{{ env_var('POSTGRES_PASSWORD', 'rcol_dev_password') }}"
+      dbname: "{{ env_var('POSTGRES_DB', 'regional_cost_of_living') }}"
+      schema: analytics
+      threads: 4
