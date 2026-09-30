@@ -18,13 +18,13 @@
 
 ---
 
-## 📸 Dashboard Preview
+## Dashboard Preview
 
 ![Dashboard Overview](docs/images/dashboard-overview.png)
 
 ---
 
-## 🎯 The Problem
+## The Problem
 
 Housing affordability is the defining economic issue of our time. Between 1980 and 2024, median household income in Canada and the U.S. grew by roughly 180%, but average rents grew by over 400%. Policymakers, economists, and citizens all need a tool that answers a simple question:
 
@@ -34,7 +34,7 @@ This project builds that tool from the ground up: official data ingestion → no
 
 ---
 
-## ✨ What It Does
+## What It Does
 
 | Layer | What It Does | Key Technology |
 |---|---|---|
@@ -45,7 +45,7 @@ This project builds that tool from the ground up: official data ingestion → no
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technologies |
 |---|---|
@@ -60,7 +60,7 @@ This project builds that tool from the ground up: official data ingestion → no
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
