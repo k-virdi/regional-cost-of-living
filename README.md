@@ -12,7 +12,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.37+-FF4B4B.svg)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**🔗 [Live Dashboard](https://regional-cost-of-living.streamlit.app)** · **📊 [Architecture](docs/ARCHITECTURE.md)** · **📈 [Key Findings](#-key-findings)**
+
 
 </div>
 
