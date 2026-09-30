@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: warehouse
+    schema: public
+    tables:
+      - name: fct_indicators
+      - name: dim_regions
+      - name: dim_dates
+
+models:
+  - name: fct_affordability
+    description: "Rent-to-income ratios and real income by region and month."
+    columns:
+      - name: rent_to_income_pct
+        description: "Annual rent as % of annual median income"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 200
+      - name: real_median_income
+        tests:
+          - not_null
